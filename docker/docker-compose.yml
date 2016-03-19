@@ -5,7 +5,7 @@ main:
    - "8888:8888"
    - "8080:8080"
   volumes:
-   - /Users/Richie/Dropbox/work:/home/jovyan/work
+   - /Users/Richie/Dropbox/Personal/Kaggle:/home/jovyan/work
   environment:
    - GRANT_SUDO=yes
    - PYTHONPATH=/home/jovyan/work/packages/data_engineering/python_work:/home/jovyan/work/packages/data_science
