@@ -1,0 +1,14 @@
+main:
+  image: dev_box
+  command: jupyter-notebook --ip=*
+  ports:
+   - "8888:8888"
+   - "8080:8080"
+  volumes:
+   - /Users/Richie/Dropbox/work:/home/jovyan/work
+  environment:
+   - GRANT_SUDO=yes
+   - PYTHONPATH=/home/jovyan/work/packages/data_engineering/python_work:/home/jovyan/work/packages/data_science
+   - BOOST_ENV=development
+  privileged: true
+  log_driver: json-file
